@@ -1,0 +1,31 @@
+{
+  "_note": "Programs pick poses from poses.json by id, in order. A pose can be a plain id or an object that overrides instruction and/or hold_seconds. hold_seconds and extra_tolerance (degrees added to every joint's tolerance) apply to the whole program. An 'All poses' program with every pose is added automatically.",
+  "programs": [
+    {
+      "id": "children",
+      "name": "Children",
+      "focus": "Playful poses, short holds",
+      "hold_seconds": 6,
+      "poses": [
+        {"id": "mountain", "instruction": "Ask a grown-up to stay close by. Stand tall like a mountain! Face the camera, feet together, arms by your sides, and stay very still."},
+        {"id": "tree", "instruction": "Be a tree! Face the camera and stand on your right leg. Press your left foot against your right leg, as high as you can, and put your hands together above your head."},
+        {"id": "chair", "instruction": "Sit in an invisible chair! Stand sideways to the camera, bend your knees, push your bottom back and reach your arms up high."},
+        {"id": "warrior2", "instruction": "Be a strong warrior! Face the camera with your feet wide apart. Bend your right knee, keep your left leg straight, and stretch your arms out like airplane wings."},
+        {"id": "downward_dog", "instruction": "Be a dog having a big stretch! Stand sideways to the camera, put your hands and feet on the floor and lift your bottom up high, like an upside-down V."},
+        {"id": "childs_pose", "instruction": "Rest like a sleepy mouse. Sideways to the camera, with the camera low: kneel, sit on your heels, put your forehead on the floor and stretch your arms forward."}
+      ]
+    },
+    {
+      "id": "men",
+      "name": "Men",
+      "focus": "Leg strength and flexibility",
+      "poses": ["mountain", "chair", "warrior2", "triangle", "downward_dog", "bridge", "childs_pose"]
+    },
+    {
+      "id": "women",
+      "name": "Women",
+      "focus": "Balance and hip mobility",
+      "poses": ["mountain", "tree", "goddess", "warrior2", "triangle", "bridge", "childs_pose"]
+    }
+  ]
+}

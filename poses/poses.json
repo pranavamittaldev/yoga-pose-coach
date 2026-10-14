@@ -1,0 +1,151 @@
+{
+  "_note": "Default target angles match the stick-figure reference images (2D, front view unless stated). Run tools/record_pose.py to replace them with your own; that sets calibrated to true.",
+  "poses": [
+    {
+      "id": "mountain",
+      "name": "Mountain Pose (Tadasana)",
+      "instruction": "Face the camera with your whole body in view. Stand tall, feet together, legs straight and arms resting by your sides.",
+      "image": "poses/images/mountain.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 180, "tolerance": 10, "weight": 1.0, "tip_low": "Left knee is bent. Straighten your left leg.", "tip_high": "Left knee is locked back. Soften it slightly."},
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 180, "tolerance": 10, "weight": 1.0, "tip_low": "Right knee is bent. Straighten your right leg.", "tip_high": "Right knee is locked back. Soften it slightly."},
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 176, "tolerance": 10, "weight": 1.0, "tip_low": "You are leaning or bending at the left hip. Stand up straight.", "tip_high": "Left hip is pushed out. Bring your hips under your shoulders."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 176, "tolerance": 10, "weight": 1.0, "tip_low": "You are leaning or bending at the right hip. Stand up straight.", "tip_high": "Right hip is pushed out. Bring your hips under your shoulders."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 12, "tolerance": 10, "weight": 0.7, "tip_low": "Left arm is pressed in. Let it hang a little away from your body.", "tip_high": "Left arm is lifted away. Lower it to your side."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 12, "tolerance": 10, "weight": 0.7, "tip_low": "Right arm is pressed in. Let it hang a little away from your body.", "tip_high": "Right arm is lifted away. Lower it to your side."}
+      ]
+    },
+    {
+      "id": "chair",
+      "name": "Chair Pose (Utkatasana)",
+      "instruction": "Turn sideways to the camera. With feet together, bend your knees and sit your hips back as if into a chair, and reach your arms up alongside your ears.",
+      "image": "poses/images/chair.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 92, "tolerance": 20, "weight": 1.5, "tip_low": "Knees are bent too deep. Rise up a little.", "tip_high": "Knees are too straight. Bend your knees and sit back further."},
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 92, "tolerance": 20, "weight": 1.5, "tip_low": "Knees are bent too deep. Rise up a little.", "tip_high": "Knees are too straight. Bend your knees and sit back further."},
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 90, "tolerance": 15, "weight": 1.2, "tip_low": "You are folding forward too much. Lift your chest.", "tip_high": "Torso is too upright. Lean forward slightly as your hips sit back."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 90, "tolerance": 15, "weight": 1.2, "tip_low": "You are folding forward too much. Lift your chest.", "tip_high": "Torso is too upright. Lean forward slightly as your hips sit back."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 169, "tolerance": 15, "weight": 1.0, "tip_low": "Arms are too low. Reach them up alongside your ears.", "tip_high": "Arms are reaching too far back. Keep them in line with your torso."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 169, "tolerance": 15, "weight": 1.0, "tip_low": "Arms are too low. Reach them up alongside your ears.", "tip_high": "Arms are reaching too far back. Keep them in line with your torso."},
+        {"name": "left_elbow", "landmarks": ["left_shoulder", "left_elbow", "left_wrist"], "target_angle": 180, "tolerance": 15, "weight": 1.0, "tip_low": "Elbows are bent. Straighten your arms as you reach up.", "tip_high": "Elbows are overextended. Soften them slightly."},
+        {"name": "right_elbow", "landmarks": ["right_shoulder", "right_elbow", "right_wrist"], "target_angle": 180, "tolerance": 15, "weight": 1.0, "tip_low": "Elbows are bent. Straighten your arms as you reach up.", "tip_high": "Elbows are overextended. Soften them slightly."}
+      ]
+    },
+    {
+      "id": "tree",
+      "name": "Tree Pose (Vrikshasana)",
+      "instruction": "Face the camera. Stand on your right leg, place your left foot on your inner right thigh with the knee pointing out, and press your palms together overhead.",
+      "image": "poses/images/tree.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 180, "tolerance": 10, "weight": 1.5, "tip_low": "Standing right knee is bent. Straighten your standing leg.", "tip_high": "Standing right knee is locked back. Soften it slightly."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 175, "tolerance": 10, "weight": 1.0, "tip_low": "You are leaning over your standing hip. Stand up tall.", "tip_high": "Standing hip is pushed out to the side. Center your weight."},
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 37, "tolerance": 20, "weight": 1.0, "tip_low": "Left knee is folded too tightly. Let the foot rest higher on your thigh.", "tip_high": "Left knee is not bent enough. Draw your left foot up to your inner thigh."},
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 122, "tolerance": 15, "weight": 1.5, "tip_low": "Left knee is too far out or raised. Let it drop toward the floor.", "tip_high": "Left knee is pointing down or forward. Open it out to the side."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 169, "tolerance": 15, "weight": 0.8, "tip_low": "Left arm is too low. Reach your arms up overhead.", "tip_high": "Left arm is reaching too far over. Keep your arms above your head."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 169, "tolerance": 15, "weight": 0.8, "tip_low": "Right arm is too low. Reach your arms up overhead.", "tip_high": "Right arm is reaching too far over. Keep your arms above your head."}
+      ]
+    },
+    {
+      "id": "goddess",
+      "name": "Goddess Pose (Utkata Konasana)",
+      "instruction": "Face the camera with feet wide apart and toes turned out. Bend both knees out over your toes, and lift your elbows to shoulder height with your hands pointing up.",
+      "image": "poses/images/goddess.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 105, "tolerance": 15, "weight": 1.5, "tip_low": "Left knee is bent too far. Rise up a little.", "tip_high": "Left knee is too straight. Bend it and sink your hips."},
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 105, "tolerance": 15, "weight": 1.5, "tip_low": "Right knee is bent too far. Rise up a little.", "tip_high": "Right knee is too straight. Bend it and sink your hips."},
+        {"name": "left_elbow", "landmarks": ["left_shoulder", "left_elbow", "left_wrist"], "target_angle": 90, "tolerance": 20, "weight": 1.0, "tip_low": "Left elbow is folded in too far. Point your left forearm straight up.", "tip_high": "Left arm is too straight. Bend the elbow so your forearm points up."},
+        {"name": "right_elbow", "landmarks": ["right_shoulder", "right_elbow", "right_wrist"], "target_angle": 90, "tolerance": 20, "weight": 1.0, "tip_low": "Right elbow is folded in too far. Point your right forearm straight up.", "tip_high": "Right arm is too straight. Bend the elbow so your forearm points up."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 94, "tolerance": 15, "weight": 1.0, "tip_low": "Left elbow has dropped. Lift it to shoulder height.", "tip_high": "Left elbow is too high. Lower it to shoulder height."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 94, "tolerance": 15, "weight": 1.0, "tip_low": "Right elbow has dropped. Lift it to shoulder height.", "tip_high": "Right elbow is too high. Lower it to shoulder height."}
+      ]
+    },
+    {
+      "id": "warrior2",
+      "name": "Warrior II (Virabhadrasana II)",
+      "instruction": "Face the camera with feet wide apart. Bend your right knee over your right ankle, keep your left leg straight, and stretch both arms out at shoulder height.",
+      "image": "poses/images/warrior2.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 107, "tolerance": 15, "weight": 1.5, "tip_low": "Right knee is bent too much. Ease up so the knee stays over the ankle.", "tip_high": "Right knee is not bent enough. Sink deeper into your front leg."},
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 180, "tolerance": 10, "weight": 1.2, "tip_low": "Left knee is bent. Straighten your back leg.", "tip_high": "Left knee is locked back. Soften it slightly."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 92, "tolerance": 12, "weight": 1.0, "tip_low": "Left arm is too low. Raise it to shoulder height.", "tip_high": "Left arm is too high. Lower it to shoulder height."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 90, "tolerance": 12, "weight": 1.0, "tip_low": "Right arm is too low. Raise it to shoulder height.", "tip_high": "Right arm is too high. Lower it to shoulder height."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 105, "tolerance": 15, "weight": 1.0, "tip_low": "You are leaning toward your front leg. Keep your torso upright over your hips.", "tip_high": "Your front leg is too straight. Sink your hips until the front thigh is nearly level with the floor."},
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 143, "tolerance": 15, "weight": 1.0, "tip_low": "You are leaning toward your back leg. Keep your torso upright over your hips.", "tip_high": "Your torso is leaning toward your front leg. Stack your shoulders over your hips."}
+      ]
+    },
+    {
+      "id": "triangle",
+      "name": "Triangle Pose (Trikonasana)",
+      "instruction": "Face the camera with feet wide apart and both legs straight. Tip your upper body over your left leg, rest your left hand on your shin, and reach your right arm straight up.",
+      "image": "poses/images/triangle.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 179, "tolerance": 12, "weight": 1.2, "tip_low": "Left knee is bent. Straighten your front leg.", "tip_high": "Left knee is locked back. Soften it slightly."},
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 179, "tolerance": 12, "weight": 1.2, "tip_low": "Right knee is bent. Straighten your back leg.", "tip_high": "Right knee is locked back. Soften it slightly."},
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 48, "tolerance": 15, "weight": 1.5, "tip_low": "You are folding too far forward. Lengthen your torso sideways.", "tip_high": "You are too upright. Tip your torso further over your left leg."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 136, "tolerance": 15, "weight": 1.0, "tip_low": "Your top hip is collapsing. Open your right hip toward the camera.", "tip_high": "You are too upright. Tip your torso further over your left leg."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 100, "tolerance": 15, "weight": 0.8, "tip_low": "Left arm is tucked in. Let it hang straight down to your shin.", "tip_high": "Left arm is reaching forward. Let it hang straight down to your shin."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 98, "tolerance": 15, "weight": 0.8, "tip_low": "Right arm is not reaching up. Stretch it straight toward the ceiling.", "tip_high": "Right arm is reaching back too far. Stack it above your shoulder."}
+      ]
+    },
+    {
+      "id": "downward_dog",
+      "name": "Downward Dog (Adho Mukha Svanasana)",
+      "instruction": "Turn sideways to the camera. Hands and feet on the floor, lift your hips high so your body makes an upside-down V, arms and legs straight.",
+      "image": "poses/images/downward_dog.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 56, "tolerance": 12, "weight": 1.5, "tip_low": "Hips are folded too tightly. Walk your hands forward a little.", "tip_high": "Hips are too low. Lift your hips up and back."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 56, "tolerance": 12, "weight": 1.5, "tip_low": "Hips are folded too tightly. Walk your hands forward a little.", "tip_high": "Hips are too low. Lift your hips up and back."},
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 179, "tolerance": 15, "weight": 1.0, "tip_low": "Knees are bent. Press your heels toward the floor to straighten your legs.", "tip_high": "Knees are locked back. Soften them slightly."},
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 179, "tolerance": 15, "weight": 1.0, "tip_low": "Knees are bent. Press your heels toward the floor to straighten your legs.", "tip_high": "Knees are locked back. Soften them slightly."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 175, "tolerance": 15, "weight": 1.0, "tip_low": "Shoulders are hunched. Push the floor away and bring your arms in line with your back.", "tip_high": "Chest is sinking toward the floor. Lift through your shoulders."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 175, "tolerance": 15, "weight": 1.0, "tip_low": "Shoulders are hunched. Push the floor away and bring your arms in line with your back.", "tip_high": "Chest is sinking toward the floor. Lift through your shoulders."}
+      ]
+    },
+    {
+      "id": "childs_pose",
+      "name": "Child's Pose (Balasana)",
+      "instruction": "Turn sideways to the camera, with the camera low. Kneel, sit back on your heels, rest your forehead on the floor and stretch your arms forward.",
+      "image": "poses/images/childs_pose.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 38, "tolerance": 15, "weight": 1.5, "tip_low": "Knees are folded very tightly. Make sure you are comfortable on your heels.", "tip_high": "You are not sitting back. Sink your hips toward your heels."},
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 38, "tolerance": 15, "weight": 1.5, "tip_low": "Knees are folded very tightly. Make sure you are comfortable on your heels.", "tip_high": "You are not sitting back. Sink your hips toward your heels."},
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 24, "tolerance": 15, "weight": 1.5, "tip_low": "Hips are folded very tightly. Ease off a little.", "tip_high": "Your chest is lifted. Fold forward and rest your chest on your thighs."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 24, "tolerance": 15, "weight": 1.5, "tip_low": "Hips are folded very tightly. Ease off a little.", "tip_high": "Your chest is lifted. Fold forward and rest your chest on your thighs."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 178, "tolerance": 20, "weight": 1.0, "tip_low": "Arms are not reaching forward. Stretch them out in front of you on the floor.", "tip_high": "Arms are reaching too high. Rest them on the floor in front of you."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 178, "tolerance": 20, "weight": 1.0, "tip_low": "Arms are not reaching forward. Stretch them out in front of you on the floor.", "tip_high": "Arms are reaching too high. Rest them on the floor in front of you."}
+      ]
+    },
+    {
+      "id": "bridge",
+      "name": "Bridge Pose (Setu Bandha Sarvangasana)",
+      "instruction": "Turn sideways to the camera, with the camera low. Lie on your back, feet flat near your hips, and lift your hips into a straight line from shoulders to knees.",
+      "image": "poses/images/bridge.png",
+      "hold_seconds": 10,
+      "calibrated": false,
+      "joints": [
+        {"name": "left_knee", "landmarks": ["left_hip", "left_knee", "left_ankle"], "target_angle": 76, "tolerance": 15, "weight": 1.5, "tip_low": "Feet are too close to your hips. Walk them out a little.", "tip_high": "Feet are too far away. Walk them toward your hips so your shins are upright."},
+        {"name": "right_knee", "landmarks": ["right_hip", "right_knee", "right_ankle"], "target_angle": 76, "tolerance": 15, "weight": 1.5, "tip_low": "Feet are too close to your hips. Walk them out a little.", "tip_high": "Feet are too far away. Walk them toward your hips so your shins are upright."},
+        {"name": "left_hip", "landmarks": ["left_shoulder", "left_hip", "left_knee"], "target_angle": 169, "tolerance": 12, "weight": 1.2, "tip_low": "Hips are too low. Press into your feet and lift your hips.", "tip_high": "Hips are pushed too high. Lower them a little so shoulders, hips and knees are in line."},
+        {"name": "right_hip", "landmarks": ["right_shoulder", "right_hip", "right_knee"], "target_angle": 169, "tolerance": 12, "weight": 1.2, "tip_low": "Hips are too low. Press into your feet and lift your hips.", "tip_high": "Hips are pushed too high. Lower them a little so shoulders, hips and knees are in line."},
+        {"name": "left_shoulder", "landmarks": ["left_hip", "left_shoulder", "left_elbow"], "target_angle": 37, "tolerance": 20, "weight": 0.8, "tip_low": "Arms are lifted off the floor. Rest them flat beside you.", "tip_high": "Arms are reaching up. Lay them flat on the floor beside you, palms down."},
+        {"name": "right_shoulder", "landmarks": ["right_hip", "right_shoulder", "right_elbow"], "target_angle": 37, "tolerance": 20, "weight": 0.8, "tip_low": "Arms are lifted off the floor. Rest them flat beside you.", "tip_high": "Arms are reaching up. Lay them flat on the floor beside you, palms down."}
+      ]
+    }
+  ]
+}
