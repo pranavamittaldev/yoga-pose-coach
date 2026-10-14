@@ -19,6 +19,13 @@ sequence from the webcam: reference figure, countdown, 10 s timed hold, joint-an
   the user disliked test windows popping up. **The live demo is the exception**: the user
   wants to see the app on screen with their camera.
 
+## Repository
+Private GitHub repo: https://github.com/pranavamittaldev/yoga-pose-coach (branch `main`,
+created 2026-10-14). Commits use the user's GitHub noreply address (repo-local git config).
+Not in git, by `.gitignore`: `.venv/`, `models/` (`setup.cmd` downloads the model),
+`eval_clips/` (copy the clips over separately, or `evaluate.py` reports no clips), and
+`logs/` (personal session logs). Commit and push only when the user asks.
+
 ## Status
 - All 10 spec milestones are done (3 batches), plus 4 extra poses the user asked for.
 - 9 poses, in this order: mountain, chair, tree, goddess, warrior2, triangle, downward_dog,
